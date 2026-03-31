@@ -6,7 +6,7 @@ const tasksRouter = require('./routes/tasks');
 
 
 app.get('/', (req, res) => {
-  res.json({ message: "Feature version" });
+  res.json({ message: "Feature version step 10 test" });
 });
 
 app.use('/tasks', tasksRouter);
