@@ -6,9 +6,16 @@ const tasksRouter = require('./routes/tasks');
 
 
 app.get('/', (req, res) => {
-  res.json({ message: "Main version" });
+  res.json({ message: "Main version--test" });
 });
 
 app.use('/tasks', tasksRouter);
 
-app.listen(3000, ()=> console.log("API running on port 3000"));
+if (require.main === module) {
+  app.listen(3000, () => console.log("API running on port 3000"));
+}
+
+module.exports = app;
+
+// CI test change
+console.log("Testing CI with a Pull Request ---test");
