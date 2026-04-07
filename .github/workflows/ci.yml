@@ -41,5 +41,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/Gh0s7Y4ss/task-manager-api:latest
-            ghcr.io/Gh0s7Y4ss/task-manager-api:pro
+            ghcr.io/gh0s7y4ss/task-manager-api:latest
+            ghcr.io/gh0s7y4ss/task-manager-api:pro
